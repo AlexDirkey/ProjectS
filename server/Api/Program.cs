@@ -4,8 +4,6 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Kør altid på en kendt lokal HTTP-port (skift evt. 5080 hvis optaget)
-builder.WebHost.UseUrls("http://localhost:5080");
 
 // Connection string: brug CONN_STR env var hvis sat, ellers appsettings.json
 var connStr =
